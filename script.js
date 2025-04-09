@@ -131,7 +131,7 @@
 //  addTwoNumbers(...arr,...arr1);
 
 
-                                          //  REST PARAMETER
+//  REST PARAMETER
 
 // function someFunction(param1, ...param2){
 //   console.log(param1,param2);
@@ -143,7 +143,7 @@
 
 
 
-                                        //  return tpyes
+//  return tpyes
 
 // function addTwoNumbers(x,y){
 //   console.log(x+y);
@@ -168,17 +168,166 @@
 
 
 
-let addTwoNumbers= (x,y)=>x+y;
+// let addTwoNumbers= (x,y)=>x+y;
 
-let resultArr=[];
-for(let i=0;i<10;i++){
-  let result=addTwoNumbers(i,2*i);
-  resultArr.push(result);
+// let resultArr=[];
+// for(let i=0;i<10;i++){
+//   let result=addTwoNumbers(i,2*i);
+//   resultArr.push(result);
+// }
+// console.log(resultArr);
+
+
+// LOCAL VARIABLES IN FUNCTIONS
+
+// function testAvailibility(){
+//   let y ="Local variable!";
+//   console.log (" Available here",y);
+// }
+
+// testAvailibility("hii");
+// console.log("Not available here:",y);
+
+// function testAvailibility(){
+//   let y="I'll return";
+//   console.log("Available here:",y);
+//   return y;
+// }
+
+// let z=testAvailibility();
+// console.log("outside the function:",z);
+// console.log("not available here:",y);
+
+
+
+//     LET versus var variables
+
+// function doingStuff(){
+//   if(true){
+//     var x=
+//   }
+// }
+
+
+
+// function doingStuff(){
+//   if(true){
+//     console.log(x);
+//     var x="local";
+//   }
+// }
+
+// doingStuff();
+
+
+// const scope  ,its a block scope
+
+// function doingStuff() {
+//   if (true) {
+//     console.log(x);
+//       const x = "local";
+//   }
+// }
+
+// doingStuff();
+
+
+// GLOBAL VARIABLE
+
+// let globalVar = "Accessible everywhere!";
+// console.log("Outside function:",globalVar);
+
+// function creatingNewFunction(x){
+//   console.log("")
+// }
+
+
+
+
+
+
+// let x="global";
+
+// function doingStuff(){
+//   let x="local";
+//   console.log(x);
+// }
+
+// doingStuff();
+// console.log(x);
+
+
+
+
+
+// let x="global";
+
+// function doingStuff(x){
+//   console.log(x);
+// }
+
+// doingStuff("param");
+
+
+
+
+
+// function confuseReader(){
+//   x="Guess my scope....";
+//   console.log("inside the func",x);
+// }
+
+// confuseReader();
+// console.log("outside the func",x);
+
+
+
+
+
+// Immediate invoked function expression
+// iife imediately invoked function expression
+// (); is used to invoke the function 
+
+
+// (function (){
+//   console.log("IIFE");
+// }
+// ) ();
+
+
+
+
+// Arrow func 
+// (
+//   ()=>{
+//     console.log("run right away");
+//   }
+// ) ();
+
+
+
+
+//                            RECURSION FUNCTION 
+
+
+// function getRecursive(nr){
+//   console.log(nr);
+//   if(nr>0) getRecursive(--nr);
+// }
+
+// getRecursive(3);
+
+
+
+
+function logRecursive(nr){
+  console.log("Getting started:", nr);
+
+  if(nr>0) logRecursive(nr-1);
+  else console.log("done with recursion");
+
+  console.log("ended",nr);
 }
-console.log(resultArr);
 
-
-
-
-
+logRecursive(3);
 
