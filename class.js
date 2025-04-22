@@ -77,20 +77,123 @@
 
 // use dont use function keyword
 
-class Person{
-  constructor(firstname,lastname="doe"){
-    this.firstname=firstname;
-    this.lastname=lastname;
+// class Person{
+//   constructor(firstname,lastname="doe"){
+//     this.firstname=firstname;
+//     this.lastname=lastname;
+
+//   }
+
+//   greet (){
+//     console.log("Hi there !",this.firstname);
+//   }
+// }
+
+
+// let p=new Person("Maaike", "van putten");
+// p.greet();
+
+
+
+
+
+// class Person{
+//   constructor(firstname,lastname="doe"){
+//     this.firstname=firstname;
+//     this.lastname=lastname;
+
+//   }
+
+//   greet (){
+//     console.log("Hi there !",this.firstname);
+//   }
+
+//   compliment(name,object){
+//     return "This is wonderful" +object+ ","+name;
+//   }
+// }
+
+
+// let p=new Person("Maaike", "van putten");
+// p.greet();
+// let compliment =p.compliment("Harry","hat");
+// console.log(compliment);
+
+
+
+
+
+// private firstname
+
+// class Person {
+//   #firstname;
+//   #lastname;
+
+//   constructor(firstname,lastname){
+//     this.#firstname=firstname;
+//     this.#lastname=lastname;
+//   }
+
+// }
+
+// let p=new Person("Maaike", "van putten");
+// console.log(p.firstname);
+
+
+
+
+
+
+
+// class Person {
+//   #firstname;
+//   #lastname;
+
+//   constructor(firstname,lastname){
+//     this.#firstname=firstname;
+//     this.#lastname=lastname;
+//   }
+
+// }
+
+
+
+
+
+
+//  Getters AND Setters
+
+
+class Person {
+  #firstname;
+  #lastname;
+
+  constructor(firstname,lastname){
+    this.#firstname=firstname;
+    this.#lastname=lastname;
+  }
+
+  get firstname(){
+    return this.#firstname;
+  }
+
+  set firstname(firstname){
+    this.#firstname=firstname;
 
   }
 
-  greet (){
-    console.log("Hi there !",this.firstname);
+  get lastname(){
+    return this.#lastname;
   }
+
+  set lastname(lastname){
+    this.#lastname=lastname;
+  }
+  
 }
 
-
 let p=new Person("Maaike", "van putten");
-p.greet();
+console.log(p.lastname);
+
 
 
