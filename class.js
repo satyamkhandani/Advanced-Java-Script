@@ -164,36 +164,36 @@
 //  Getters AND Setters
 
 
-class Person {
-  #firstname;
-  #lastname;
+// class Person {
+//   #firstname;
+//   #lastname;
 
-  constructor(firstname,lastname){
-    this.#firstname=firstname;
-    this.#lastname=lastname;
-  }
+//   constructor(firstname,lastname){
+//     this.#firstname=firstname;
+//     this.#lastname=lastname;
+//   }
 
-  get firstname(){
-    return this.#firstname;
-  }
+//   get firstname(){
+//     return this.#firstname;
+//   }
 
-  set firstname(firstname){
-    this.#firstname=firstname;
+//   set firstname(firstname){
+//     this.#firstname=firstname;
 
-  }
+//   }
 
-  get lastname(){
-    return this.#lastname;
-  }
+//   get lastname(){
+//     return this.#lastname;
+//   }
 
-  set lastname(lastname){
-    this.#lastname=lastname;
-  }
+//   set lastname(lastname){
+//     this.#lastname=lastname;
+//   }
   
-}
+// }
 
-let p=new Person("Maaike", "van putten");
-console.log(p.lastname);
+// let p=new Person("Maaike", "van putten");
+// console.log(p.lastname);
 
 
 
